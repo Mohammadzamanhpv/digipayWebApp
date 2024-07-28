@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <title>Digipay | وب اپلیکیشن دیجی‌پی</title>
+
+    <style>
+        #box>.left {
+            /* border: 1px solid black; */
+            float: left;
+            width: 532px;
+            height: 640px;
+            /* padding-top: 30px; */
+            border-radius: 50px 0 0 50px;
+            overflow: scroll;
+        }
+
+        .left>#transactions {
+            width: 530px;
+            height: 1000px;
+            float: right;
+            color: black;
+            overflow: hidden;
+            display: none;
+        }
+
+        .left>#transactions>h2 {
+            float: right;
+            color: black;
+            position: relative;
+            right: 30%;
+            top: 20%;
+
+        }
+
+        .left>#club {
+            width: 530px;
+            height: 1000px;
+            float: right;
+            color: black;
+            overflow: hidden;
+
+            display: none;
+        }
+
+        .left>#club>h2 {
+            float: right;
+            color: black;
+            position: relative;
+            right: 30%;
+            top: 20%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="mainBox">
+            <div id="box">
+                <div class="right">
+                    <div id="logo">
+                        <img src="./img/digipaysvg.svg" alt="">
+                    </div>
+                    <div id="btnhome" class="menuBtn avtive">
+                        <img src="./img/home.svg" alt="">
+                        <h4>خانه</h4>
+                    </div>
+                    <div id="btntActions" class="menuBtn">
+                        <img src="./img/transactions.svg" alt="">
+                        <h4>تراکنش ها</h4>
+                    </div>
+                    <div id="btnshops" class="menuBtn">
+                        <img src="./img/store.svg" alt="">
+                        <h4>فروشگاه ها</h4>
+                    </div>
+                    <div id="btnqrCode" class="menuBtn">
+                        <img src="./img/barcode.svg" alt="">
+                        <h4>بارکد</h4>
+                    </div>
+                    <div id="btnpayClub" class="menuBtn">
+                        <img src="./img/prize.svg" alt="">
+                        <h4>پی‌کلاب</h4>
+                    </div>
+                    <div id="btnmessage" class="menuBtn">
+                        <img src="./img/notifications.svg" alt="">
+                        <h4>پیام ها</h4>
+                    </div>
+                    <div id="btnoptions" class="menuBtn">
+                        <img src="./img/options.svg" alt="">
+                        <h4>تنظیمات</h4>
+                    </div>
+                </div>
+                <div class="left">
+                    <div id="homebox">
+                        <div id="top">
+                            <div class="head">
+                                <div>
+                                    <h2>کیف پول</h2>
+                                </div>
+                                <div>
+                                    <h4>مدیریت کیف پول</h4>
+                                </div>
+                            </div>
+                            <div id="slide" class="slide">
+                                <div id="slideshow" class="slideShow">
+                                    <div id="slidebox" class="slidebox">
+                                        <img src="./img/bigbanner1.png" alt="">
+                                    </div>
+                                    <div class="slidebox">
+                                        <img src="./img/bigbanner2.png" alt="">
+                                    </div>
+                                    <div class="slidebox">
+                                        <img src="./img/bigbanner3.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="perv">
+                                    <img src="./img/left-nav.svg" alt="">
+                                </div>
+                                <div id="next">
+                                    <img src="./img/right-nav.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="service">
+                                <div class="right">
+                                    <img src="./img/add.png" alt="">
+                                    <h3>افزایش موجودی</h3>
+                                </div>
+                                <div class="left">
+                                    <img src="./img/payback.png" alt="">
+                                    <h3>برداشت / انتقال</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="line"></div>
+                        <div id="bottom">
+                            <div class="btm">
+                                <div class="items">
+                                    <div class="it1">
+                                        <img src="./img/charge.png" alt="">
+                                        <h5>خرید شارژ</h5>
+                                    </div>
+                                    <div class="it2">
+                                        <img src="./img/data.png" alt="">
+                                        <h5>بسته اینترنت</h5>
+                                    </div>
+                                    <div class="it3">
+                                        <img src="./img/recipt.png" alt="">
+                                        <h5>پرداخت قبوض</h5>
+                                    </div>
+                                    <div class="it4">
+                                        <img src="./img/card2card.png" alt="">
+                                        <h5>کارت به کارت</h5>
+                                    </div>
+                                    <div class="it5">
+                                        <img src="./img/loan.png" alt="">
+                                        <h5>دریافت وام</h5>
+                                    </div>
+                                    <div class="it6">
+                                        <img src="./img/creditloan.png" alt="">
+                                        <h5>خرید اعتباری</h5>
+                                    </div>
+                                    <div class="it7">
+                                        <img src="./img/viechel.png" alt="">
+                                        <h5>عوراض جاده‌ای</h5>
+                                    </div>
+                                    <div class="it8">
+                                        <img src="./img/others.png" alt="">
+                                        <h5>سایر</h5>
+                                    </div>
+                                </div>
+                                <div class="banners">
+                                    <img src="./img/banner1.png" alt="">
+                                    <img src="./img/banner2.png" alt="">
+                                    <img src="./img/banner1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="transactions">
+                        <div class="msgpic">
+                            <img src="./img/msgpic.svg" alt="">
+                        </div>
+                        <div class="msgtext">
+                            <h2>
+                                در حال حاضر هیچ پیامی برای نمایش وجود ندارد.
+                            </h2>
+                        </div>
+                    </div>
+                    <div id="shops">
+                        <div class="title">فروشگاه‌ها</div>
+                        <div class="list">
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Digikala.svg" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>دیجی‌کالا</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Xvision.png" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>ایکس ویژن</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Mobile140.svg" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>موبایل۱۴۰</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/hematit_gold.png" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>هماتیت گلد</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/technolife.svg" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>تکنولایف</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Snowa.svg" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>اسنوا</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Safar-Market.png" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>سفرمارکت</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Taj.svg" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>تاج</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Digiland.png" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>دیجی‌لند</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="img">
+                                    <img src="./img/Bost.png" alt="">
+                                </div>
+                                <div class="texts">
+                                    <h4>بست</h4>
+                                    <h6>فروشگاه</h6>
+                                </div>
+                                <div class="links">
+                                    <img src="./img/openlink.svg" alt="">
+                                    <a href="">خرید اینترنتی</a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div id="qrCode">
+                        <div class="qrpic">
+                            <img src="./img/qrpic.svg" alt="">
+                        </div>
+                        <div class="qrtext">
+                            <h2>اجازه دسترسی به دوربین وجود ندارد!</h2>
+                            <h4>لطفا برای استفاده از بارکدخوان، به تنظیمات مرورگر دستگاهتان رفته و دسترسی به دوربین را
+                                فعال کنید</h4>
+                        </div>
+                    </div>
+                    <div id="club">
+                        <div class="msgpic">
+                            <img src="./img/msgpic.svg" alt="">
+                        </div>
+                        <div class="msgtext">
+                            <h2>
+                                در حال حاضر هیچ پیامی برای نمایش وجود ندارد.
+                            </h2>
+                        </div>
+                    </div>
+                    <div id="msg">
+                        <div class="msgpic">
+                            <img src="./img/msgpic.svg" alt="">
+                        </div>
+                        <div class="msgtext">
+                            <h2>
+                                در حال حاضر هیچ پیامی برای نمایش وجود ندارد.
+                            </h2>
+                        </div>
+                    </div>
+                    <div id="options">
+                        <div class="title">تنظیمات</div>
+                        <div class="list">
+                            <li class="profile">
+                                <img src="./img/digipay-blue.svg" alt="">
+                                <span>محمدزمان حسین پور</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <div class="solidbox"></div>
+                            <li class="itlist invite">
+                                <img src="./img/invite.png" alt="">
+                                <span>دعوت دوستان</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <div class="solidbox"></div>
+                            <li class="itlist passcode">
+                                <img src="./img/passcode.png" alt="">
+                                <span>رمز عبور و امنیت</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <div class="solidbox"></div>
+                            <li class="itlist wallet">
+                                <img src="./img/wallet.png" alt="">
+                                <span>برداشت پول</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <li class="itlist cardopt">
+                                <img src="./img/cardadmin.png" alt="">
+                                <span>مدیریت کارت‌ها</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <div class="solidbox"></div>
+                            <li class="itlist update">
+                                <img src="./img/update.png" alt="">
+                                <span>بروزرسانی</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <li class="itlist rules">
+                                <img src="./img/rules.png" alt="">
+                                <span>قوانین</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <li class="itlist about">
+                                <img src="./img/about.png" alt="">
+                                <span>درباره ما</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <li class="itlist comment">
+                                <img src="./img/comment.png" alt="">
+                                <span>ارسال نظر</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <li class="itlist help">
+                                <img src="./img/help.png" alt="">
+                                <span>راهنما</span>
+                                <img src="./img/arrowleft.svg" alt="">
+                            </li>
+                            <div class="solidbox"></div>
+                            <li class="itlist logout">
+                                <h3>خروج از حساب کاربری</h3>
+                            </li>
+                            <div class="solidbox"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // slider home
+        // pos = 125;
+        // perv.onclick = function () {
+        //     // alert(pos)
+
+        //     if (pos > -200) {
+        //         pos = pos - 125;
+        //         slidebox.style.right = pos + "px";
+        //     }
+        //     else if (pos == -200) {
+        //         pos = 0;
+        //         slidebox.style.right = pos + "%";
+        //     }
+        // }
+        // next.onclick = function () {
+        //     if (pos == 0) {
+        //         pos = -300;
+        //         slidebox.style.left = pos + "%";
+        //     }
+        //     pos = pos + 100;
+        //     slidebox.style.right = pos + "%";
+        // }
+
+        btnhome.onclick = function () {
+            homebox.style.display = "block";
+            transactions.style.display = "none";
+            shops.style.display = "none";
+            qrCode.style.display = "none";
+            club.style.display = "none";
+            msg.style.display = "none";
+            options.style.display = "none";
+            // 
+            btnhome.classList.add("active");
+            btntActions.classList.remove("active");
+            btnshops.classList.remove("active");
+            btnqrCode.classList.remove("active");
+            btnpayClub.classList.remove("active");
+            btnmessage.classList.remove("active");
+            btnoptions.classList.remove("active");
+        }
+        btntActions.onclick = function () {
+            homebox.style.display = "none";
+            transactions.style.display = "block";
+            shops.style.display = "none";
+            qrCode.style.display = "none";
+            club.style.display = "none";
+            msg.style.display = "none";
+            options.style.display = "none";
+            // 
+            btnhome.classList.remove("active");
+            btntActions.classList.add("active");
+            btnshops.classList.remove("active");
+            btnqrCode.classList.remove("active");
+            btnpayClub.classList.remove("active");
+            btnmessage.classList.remove("active");
+            btnoptions.classList.remove("active");
+        }
+        btnshops.onclick = function () {
+            homebox.style.display = "none";
+            transactions.style.display = "none";
+            shops.style.display = "block";
+            qrCode.style.display = "none";
+            club.style.display = "none";
+            msg.style.display = "none";
+            options.style.display = "none";
+            // 
+            btnhome.classList.remove("active");
+            btntActions.classList.remove("active");
+            btnshops.classList.add("active");
+            btnqrCode.classList.remove("active");
+            btnpayClub.classList.remove("active");
+            btnmessage.classList.remove("active");
+            btnoptions.classList.remove("active");
+        }
+        btnqrCode.onclick = function () {
+            homebox.style.display = "none";
+            transactions.style.display = "none";
+            shops.style.display = "none";
+            qrCode.style.display = "block";
+            club.style.display = "none";
+            msg.style.display = "none";
+            options.style.display = "none";
+            // 
+            btnhome.classList.remove("active");
+            btntActions.classList.remove("active");
+            btnshops.classList.remove("active");
+            btnqrCode.classList.add("active");
+            btnpayClub.classList.remove("active");
+            btnmessage.classList.remove("active");
+            btnoptions.classList.remove("active");
+        }
+        btnpayClub.onclick = function () {
+            homebox.style.display = "none";
+            transactions.style.display = "none";
+            shops.style.display = "none";
+            qrCode.style.display = "none";
+            club.style.display = "block";
+            msg.style.display = "none";
+            options.style.display = "none";
+            // 
+            btnhome.classList.remove("active");
+            btntActions.classList.remove("active");
+            btnshops.classList.remove("active");
+            btnqrCode.classList.remove("active");
+            btnpayClub.classList.add("active");
+            btnmessage.classList.remove("active");
+            btnoptions.classList.remove("active");
+        }
+        btnmessage.onclick = function () {
+            homebox.style.display = "none";
+            transactions.style.display = "none";
+            shops.style.display = "none";
+            qrCode.style.display = "none";
+            club.style.display = "none";
+            msg.style.display = "block";
+            options.style.display = "none";
+            // 
+            btnhome.classList.remove("active");
+            btntActions.classList.remove("active");
+            btnshops.classList.remove("active");
+            btnqrCode.classList.remove("active");
+            btnpayClub.classList.remove("active");
+            btnmessage.classList.add("active");
+            btnoptions.classList.remove("active");
+        }
+        btnoptions.onclick = function () {
+            homebox.style.display = "none";
+            transactions.style.display = "none";
+            shops.style.display = "none";
+            qrCode.style.display = "none";
+            club.style.display = "none";
+            msg.style.display = "none";
+            options.style.display = "block";
+            // 
+            btnhome.classList.remove("active");
+            btntActions.classList.remove("active");
+            btnshops.classList.remove("active");
+            btnqrCode.classList.remove("active");
+            btnpayClub.classList.remove("active");
+            btnmessage.classList.remove("active");
+            btnoptions.classList.add("active");
+        }
+
+
+    </script>
+</body>
+
+</html>
